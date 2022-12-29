@@ -29,6 +29,9 @@ def count(request):
 def about(request):
         return render(request, 'about.html')
 
+def secret(request):
+        return render(request, 'secret.html')
+
 
 #dead code
 '''#def eggs(request):
