@@ -1,0 +1,23 @@
+<h1>WORDCOUNT</h1>
+<br/>
+<h1>There are {{length}} words in your string</h1>
+
+<form action="{% url 'home' %}">
+  <input type ="submit" value="Return Home" />
+</form>
+
+
+<a href="{%url 'about'%}"> About Project </a>
+
+<h2>YOUR TEXT IS RIGHT HERE:</h2>
+
+{{fulltext}}
+
+<h3>Word Count</h3>
+
+{% for wrd, counttotal in dict %}
+
+{{wrd}} - {{counttotal}}
+<br/>
+
+{% endfor %}
